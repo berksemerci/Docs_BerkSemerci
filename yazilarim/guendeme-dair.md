@@ -1,2 +1,2 @@
-# Gündeme Dair
+# 🌍 Dünyada Gündem
 

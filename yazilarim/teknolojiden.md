@@ -1,2 +1,2 @@
-# Teknolojiden
+# 📡 Güncel Teknoloji
 

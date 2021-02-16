@@ -1,0 +1,2 @@
+# 🔓 Yazılım Lisanları
+

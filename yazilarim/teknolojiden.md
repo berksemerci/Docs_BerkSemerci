@@ -1,0 +1,2 @@
+# 📡 Güncel Teknoloji
+

@@ -1,2 +1,6 @@
+---
+description: Javascirpt kütüphanesi.
+---
+
 # 🎆 JQuery
 

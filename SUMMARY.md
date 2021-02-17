@@ -2,6 +2,7 @@
 
 * [📚 Kütüphanem](README.md)
 * [🙋‍♂️ Kişisel Sayfam](https://berksemerci.com/)
+* [🌌 Güncellemeler](https://github.com/berksemerci/Docs_BerkSemerci/commits/main/SUMMARY.md)
 * [✍ Yazılarım](yazilarim/README.md)
   * [🌍 Dünyada Gündem](yazilarim/dunyada-gundem.md)
   * [👨‍👩‍👧‍👦 Sosyal Medya](yazilarim/sosyal-medya.md)

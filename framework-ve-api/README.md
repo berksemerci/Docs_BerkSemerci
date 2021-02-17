@@ -4,5 +4,5 @@ description: >-
   bir konu.
 ---
 
-# 🔮 Framework ve API
+# 🔮 Framework & API
 

@@ -1,6 +1,30 @@
 # 📚 Kütüphanem
 
-```text
+{% api-method method="get" host="" path="" %}
+{% api-method-summary %}
+
+{% endapi-method-summary %}
+
+{% api-method-description %}
+
+{% endapi-method-description %}
+
+{% api-method-spec %}
+{% api-method-request %}
+{% api-method-path-parameters %}
+{% api-method-parameter name="" type="string" required=false %}
+
+{% endapi-method-parameter %}
+{% endapi-method-path-parameters %}
+{% endapi-method-request %}
+
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```
 # Table of contents
 
 * [📚 Kütüphanem](README.md)
@@ -92,6 +116,10 @@
   * [🧶 Yabancı Dil Kaynaklar](egitim-tavsiyeleri/yabanci-dil-kaynaklar.md)
   * [🏅 Faydalı Linkler](egitim-tavsiyeleri/faydali-linkler.md)
 ```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
 
 ## 15.0.0 - 2042-12-03
 

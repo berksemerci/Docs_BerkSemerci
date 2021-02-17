@@ -114,5 +114,5 @@ Tüm bunları göz önüne alınca Edirne gezimi altı bölgeye ayırdım. ilk i
 {% endtab %}
 {% endtabs %}
 
-> 🚨 Gezilecek yerler ve bölgeler mutlaka kalmayı planladığın otele göre yeniden düzenlenmeli.
+> 🚨 Gezilecek yerler ve bölgeler mutlaka kalmayı planladığın yere göre yeniden düzenlenmeli.
 

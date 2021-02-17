@@ -1,2 +1,0 @@
-# 🔌 Bilgisayarını Onar
-

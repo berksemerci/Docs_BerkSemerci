@@ -2,6 +2,8 @@
 
 * [📚 Kütüphanem](README.md)
 * [🙋‍♂️ Kişisel Sayfam](https://berksemerci.com/)
+* [🌌 Güncellemeler](https://github.com/berksemerci/Docs_BerkSemerci/commits/main/SUMMARY.md)
+* [📝 Tüm İçerikler](tum-icerikler.md)
 * [✍ Yazılarım](yazilarim/README.md)
   * [🌍 Dünyada Gündem](yazilarim/dunyada-gundem.md)
   * [👨‍👩‍👧‍👦 Sosyal Medya](yazilarim/sosyal-medya.md)
@@ -88,5 +90,4 @@
   * [🎯 Ücretsiz Uygulamalar](egitim-tavsiyeleri/ucretsiz-uygulamalar.md)
   * [🧶 Yabancı Dil Kaynaklar](egitim-tavsiyeleri/yabanci-dil-kaynaklar.md)
   * [🏅 Faydalı Linkler](egitim-tavsiyeleri/faydali-linkler.md)
-* [📝 Tüm İçerikler](tum-icerikler.md)
 

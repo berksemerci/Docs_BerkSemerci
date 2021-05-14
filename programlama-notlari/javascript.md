@@ -40,5 +40,72 @@ description: Bir web sitesine kazandırılan işlevselliğin diğer adı.
 </html>
 ```
 
+## Javascirpt Output\(Çıktı\) İşlemleri
 
+🔵 Javascript işlemlerinden geri dönüş sağlamak, sayfa içerisindeki herhangi bir elemente değer atamak, sayfada bildirim gerçekleştirmek ve konsol çıktıları oluşturmak için kullanılan kod yapılarını 4 başlıkta topluyoruz. Bunlar;
+
+* alert\(\) veya window.alert\(\)
+
+  🔹 Aslında ikisi de aynı işlevi görmektedir. Amacı sayfa yüklendiğinde ekrana bildirim göndermektir.
+
+```text
+alert("Sayfaya Hoşgeldiniz !!!");
+window.alert("Sayfaya Hoşgeldiniz !!!")
+```
+
+* innerHTML 🔹 Seçili olan element veya elementlerin istenilen değeri almasını sağlar.
+
+{% hint style="danger" %}
+innerHTML yapısının kullanılabilmesi için değer verilmesi istenilen element veya elementler mutlaka seçilmelidir. Seçim işlemlerinde elementin id, name, class veya tag türü kullanılabilir.
+{% endhint %}
+
+{% tabs %}
+{% tab title="Element by ID" %}
+Değer verilmek istenilen elementin ID değerine göre atama yapan kod parçacığıdır. ID unique olması gerektiğinden tek bir ID değerine atama yapılır.
+
+```text
+document.GetElementByID("ID_Adi").innerHTML = "Atanacak_Deger";
+```
+{% endtab %}
+
+{% tab title="Elements by Name" %}
+Değer verilmek istenilen elementlerin ad değerine göre atama yapan kod parçacığıdır. Ad değeri birden fazla elementte aynı olarak kullanılabileceğinden çoğul işlemler gerçekleştirir. Aynı ad içerisindeki element kümesinde değer verilmek istenilen elementin indis değeri belirtilmelidir.
+
+```text
+document.GetElementsByName("Name_Adi")[0].value = "Atanacak_Deger";
+```
+
+{% hint style="warning" %}
+innerHTML eğer bir form işleminde veya input için kullanılacaksa value olarak yazılmalıdır. Çünkü bu alanlarda değer yazdırılma yapılmaz, değer atanması gerçekleştirilir.
+{% endhint %}
+{% endtab %}
+
+{% tab title="Elements by Class" %}
+Değer verilmek istenilen elementlerin class değerine göre atama yapan kod parçacığıdır. Class değeri birden fazla elementte aynı olarak kullanılabileceğinden çoğul işlemler gerçekleştirir. Aynı class içerisindeki element kümesinde değer verilmek istenilen elementin indis değeri belirtilmelidir.
+
+```text
+document.GetElementsByClassName("Class_Adi")[0].innerHTML = "Atanacak_Deger";
+```
+{% endtab %}
+
+{% tab title="Elements by Tag" %}
+Değer verilmek istenilen elementlerin tag türüne göre atama yapan kod parçacığıdır. Tag değeri birden fazla elementte aynı olarak kullanılabileceğinden çoğul işlemler gerçekleştirir. Aynı tag içerisindeki element kümesinde değer verilmek istenilen elementin indis değeri belirtilmelidir.
+
+```text
+document.GetElementsByTagName("Tag_Turu")[0].innerHTML = "Atanacak_Deger";
+```
+{% endtab %}
+{% endtabs %}
+
+* document.write\(\) 🔹Sayfanın boş olan herhangi bir yerinde istenilen yazının veya değerin görüntülenmesini sağlar.
+
+```text
+document.write(Sayfada Gözükecek Yazı...);
+```
+
+* console.log\(\) 🔹Tarayıcı kaynak görüntülemesinde bulunun konsol sekmesinde istenilen işlemlerin görüntülenmesini sağlar.
+
+```text
+console.log(Bu Bir Konsol Denemesidir !);
+```
 

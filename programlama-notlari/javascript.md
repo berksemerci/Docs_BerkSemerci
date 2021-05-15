@@ -50,7 +50,7 @@ description: Bir web sitesine kazandırılan işlevselliğin diğer adı.
 
 ```text
 alert("Sayfaya Hoşgeldiniz !!!");
-window.alert("Sayfaya Hoşgeldiniz !!!")
+window.alert("Sayfaya Hoşgeldiniz !!!");
 ```
 
 * innerHTML 🔹 Seçili olan element veya elementlerin istenilen değeri almasını sağlar.
@@ -108,4 +108,10 @@ document.write(Sayfada Gözükecek Yazı...);
 ```text
 console.log(Bu Bir Konsol Denemesidir !);
 ```
+
+{% hint style="warning" %}
+Javascript'te tıpkı diğer birçok dildeki gibi her bir kod satırı noktalı virgül ";" işareti ile ayrılır.
+
+Açıklama satırı eklenecek ise çift eğik çizgi "//" veya yıldız-eğik çizgi "/\*......\*/" kullanılır.
+{% endhint %}
 

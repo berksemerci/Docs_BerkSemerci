@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+      <head> 
+            <meta charset="UTF-8">
+            <title>Javascript Test</title>
+      </head> 
+      <body>
+            <div id="DenemeYazi"></div>
+            <input type="text" name="InputAdi">
+            <p class="ParagrafClass"></p>
+            <a href="#"></a>
+
+            <script>
+                  alert("Sayfaya Hoşgeldiniz !!!");
+
+                  document.getElementById("DenemeYazi").innerHTML = "getElementById Ataması";
+                  document.getElementsByName("InputAdi")[0].value = "getElementsByName Ataması";
+                  document.getElementsByClassName("ParagrafClass")[0].innerHTML = "getElementsByClassName Ataması";
+                  document.getElementsByTagName("a")[0].innerHTML = "getElementsByTagName Ataması";
+
+                  document.write("Sayfada Gözükecek Yazı...");
+
+                  console.log("Bu Bir Konsol Denemesidir !");
+
+                  //Tüm Output(Çıktı) işlemleri tek bir örnekte...
+            </script>
+      </body>
+</html>

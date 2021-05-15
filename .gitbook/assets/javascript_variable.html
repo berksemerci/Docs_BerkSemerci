@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+      <head> 
+            <meta charset="UTF-8">
+            <title>Javascript Test</title>
+      </head> 
+      <body>
+            <label class="varType"></label>
+            <input type="text" name="varValue"><br>
+            <label class="varType"></label>
+            <input type="text" name="varValue"><br>
+            <label class="varType"></label>
+            <input type="text" name="varValue"><br>
+            <label  class="varType"></label>
+            <input type="text" name="varValue">
+
+            <script>
+                  var Sayi1 = 10;    //int
+                  var Sayi2 = 2.5;   //double
+                  var Metin = "Blog";    //string
+                  var Durum = false;    //boolean
+
+                  document.getElementsByName("varValue")[0].value = Sayi1;
+                  document.getElementsByClassName("varType")[0].innerHTML = typeof(Sayi1);
+
+                  document.getElementsByName("varValue")[1].value = Sayi2;
+                  document.getElementsByClassName("varType")[1].innerHTML = typeof(Sayi2);
+
+                  document.getElementsByName("varValue")[2].value = Metin;
+                  document.getElementsByClassName("varType")[2].innerHTML = typeof(Metin);
+
+                  document.getElementsByName("varValue")[3].value = Durum;
+                  document.getElementsByClassName("varType")[3].innerHTML = typeof(Durum);
+            </script>
+      </body>
+</html>

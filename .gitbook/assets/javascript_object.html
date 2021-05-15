@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+      <head> 
+            <meta charset="UTF-8">
+            <title>Javascript Test</title>
+      </head> 
+      <body>
+            <script>
+                  //BASİT OBJECT YAPISI
+                  var Araba = {
+                        Markasi : "Honda",
+                        Modeli : "Civic",
+                        Motoru : "1.6",
+                        Yili : 2000,
+                        Rengi : "Gri"
+                  }
+                  console.log(Araba);
+
+                  //OBJECT İÇERİSİNE FONKSİYON EKLEME
+                  var Araba = {
+                        Markasi : "Honda",
+                        Modeli : "Civic",
+                        Motoru : "1.6",
+                        Yili : 2000,
+                        Rengi : "Gri",
+                        Calistir : function(){
+                              alert("Motor Çalıştırıldı !");
+                        }
+                  }
+                  console.log(Araba.Markasi);
+                  Araba.Calistir();
+
+                  //OBJECT İŞERİSİNDEKİ FONKSİYONDAN DEĞER YAZDIRMA
+                  var Araba = {
+                        Markasi : "Honda",
+                        Modeli : "Civic",
+                        Motoru : "1.6",
+                        Yili : 2000,
+                        Rengi : "Gri",
+                        Calistir : function(){
+                              alert("Motor Çalıştırıldı !");
+                        },
+                        Bilgiler: function(){
+                              console.log("Markası : " + Araba.Markasi);
+                              console.log("Modeli: " + Araba.Modeli);
+                              console.log("Motoru: " + this.Motoru );
+                              console.log("Yili: " + this.Yili );
+                              console.log("Rengi: " + this.Rengi );
+                        }
+                  }
+                  console.log(Araba.Markasi);
+                  Araba.Calistir();
+                  Araba.Bilgiler();
+
+                  //FARKLI BİR OBJEDEN ÖZELLİK ÇEKME
+                  var Araba = {
+                        Markasi : "Honda",
+                        Modeli : "Civic",
+                        Motoru : "1.6",
+                        Yili : 2000,
+                        Rengi : "Gri",
+                        Bilgiler: function(){
+                              console.log("Markası : " + this.Markasi);
+                              console.log("Kullanan: " + Kullanici.Adi);
+                        }
+                  }
+                  var Kullanici = {
+                        Adi : "Berk"
+                  }
+                  Araba.Bilgiler();
+
+                  //OBJECT İŞERİSİNDEKİ FONKSİYONDAN DEĞER DÖNDÜRME
+                  var Araba = {
+                        Markasi : "Honda",
+                        Modeli : "Civic",
+                        Yili : 2000,
+                        Bilgiler: function(){
+                              console.log("Markası : " + this.Markasi);
+                              console.log("Modeli: " + this.Modeli);
+                              console.log("Kullanan: " + Kullanici.Adi);
+                        },
+                        YasHesapla : function(){
+                              return (2021 - this.Yili);
+                        }
+                  }
+                  var Kullanici = {
+                        Adi : "Berk"
+                  }
+                  Araba.Bilgiler();
+                  console.log(Araba.YasHesapla());
+            </script>
+      </body>
+</html>

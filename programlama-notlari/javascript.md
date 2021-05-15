@@ -447,6 +447,8 @@ console.log(Araba.YasHesapla());
 
 🔹Daha önce fonksiyon işlemlerinde yaptığımız gibi matematiksel operatör kullanarak _**"Araba"**_ objemiz içerisinde _**"Yili"**_ özelliğindeki değeri arabamızın yaşını hesaplamak için kullandık. Çıkan sonucu _**"return"**_ ederek console ekranına yazdırdık.
 
+{% file src="../.gitbook/assets/javascript\_object.html" caption="Javascript Object \(Objeler\) Örneğini İndir" %}
+
 ## Javascript Event \(Olaylar\) Kullanımı
 
 

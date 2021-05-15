@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+      <head> 
+            <meta charset="UTF-8">
+            <title>Javascript Test</title>
+      </head> 
+      <body>
+            <script>
+                  //BASİT ŞEKİLDE FONKSİYON ÖRNEĞİ
+                  function Mesaj(){
+                        document.write("Bu Bir Fonksiyon Mesajıdır");
+                  }
+                  Mesaj();
+
+                  //TEK PARAMETRELİ FONSKİYON ÖRNEĞİ
+                  function Hesaplama(OdenenUcret){
+                        var UrunUcreti = 250;
+                        var GeriOdeme;
+                        GeriOdeme = OdenenUcret - UrunUcreti;
+                        document.write(GeriOdeme);
+                  }
+                  var GonderilenUcret = 325;
+                  Hesaplama(GonderilenUcret);
+
+                  //ÇİFT PARAMETRELİ FONSKİYON ÖRNEĞİ
+                  function Hesaplama(OdenenUcret, Siparisci){
+                        var UrunUcreti = 250;
+                        var GeriOdeme;
+                        GeriOdeme = OdenenUcret - UrunUcreti;
+                        document.write(Siparisci + " Kişisine " + GeriOdeme + " TL Ödeme Yapılacak !");
+                  }
+                  var GonderilenUcret = 325;
+                  var AdSoyad = "Elif USLU";
+                  Hesaplama(GonderilenUcret, AdSoyad);
+
+                  //RETURN EDİLMİŞ FONKSİYON ÖRNEĞİ
+                  function Hesaplama(OdenenUcret, Siparisci){
+                        var UrunUcreti = 250;
+                        var GeriOdeme;
+                        GeriOdeme = OdenenUcret - UrunUcreti;
+                        return(Siparisci + " Kişisine " + GeriOdeme + " TL Ödeme Yapılacak !");
+                  }
+                  var GonderilenUcret = 325;
+                  var AdSoyad = "Elif USLU";
+                  document.write(Hesaplama(GonderilenUcret, AdSoyad));
+
+                  //RETURN EDİLMİŞ FONKSİYONUN DEĞİŞKENE ATANMASI
+                  var SonucDeger = Hesaplama(GonderilenUcret, AdSoyad);
+            </script>
+      </body>
+</html>

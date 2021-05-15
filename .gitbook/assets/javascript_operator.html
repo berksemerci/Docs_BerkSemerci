@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+      <head> 
+            <meta charset="UTF-8">
+            <title>Javascript Test</title>
+      </head> 
+      <body>
+            <script>
+                  // MATEMATİKSEL OPERATÖRLER
+                  var Sonuc;
+                  Sonuc = 6+4;    //Toplama Operatörü
+                  Sonuc = 6-4;    //Çıkarma Operatörü
+                  Sonuc = 3*2;    //ÇarpmaOperatörü
+                  Sonuc = 8/4;    //Bölme Operatörü
+                  Sonuc = 4%2;    //Mod Alma Operatörü
+                  Sonuc = ++Sayi;    //Bu Operatör Sayi değişkenini önce 1 arttırır sonra Sonuc değişkenine atar
+                  Sonuc = Sayi++;    //Bu Operatör Sayi değişkenini önce Sonuc değişkenine atar sonra 1 artırır
+                  Sonuc = --Sayi;    //Bu Operatör Sayi değişkenini önce 1 azaltır sonra Sonuc değişkenine atar
+                  Sonuc = Sayi--;    //Bu Operatör Sayi değişkenini önce Sonuc değişkenine atar sonra 1 azaltır
+
+                  // ATAMA OPERATÖRLERİ
+                  var Sayi;
+                  Sayi = 0;    //Doğrudan Atama
+                  Sayi += 5;    //Toplayarak Atama (Sayi = Sayi + 5) işleminin kısa gösterimidir
+                  Sayi -= 5;    //Çıkararak Atama (Sayi = Sayi - 5) işleminin kısa gösterimidir
+                  Sayi *= 5;    //Çarparak Atama (Sayi = Sayi * 5) işleminin kısa gösterimidir
+                  Sayi /= 5;    //Bölerek Atama (Sayi = Sayi / 5) işleminin kısa gösterimidir
+                  Sayi %= 5;    //Mod Alarak Atama (Sayi = Sayi % 5) işleminin kısa gösterimidir
+
+                  // METİNSEL OPERATÖRLER
+                  var Metin1 = "Blog";
+                  var Metin2 = "JavaScript";
+                  var BirlesikMetin;
+                  BirlesikMetin = Metin1 + Metin2;    //Metinleri Boşluksuz Birleştirir
+                  // Çıktısı = BlogJavaScript
+                  BirlesikMetin = Metin1 + " " + Metin2;    //Eğer birleştirme işleminde boşluk isteniyorsa
+                  // Çıktısı = Blog JavaScript
+
+                  // KARŞILAŞTIRMA OPERATÖRLERİ
+                  var Sayi1 = 3;
+                  var Sayi2 = 7;
+                  var Comp;    //Karşılaştırmalarda true/false değeri alacaktır
+                  Comp = Sayi1 == Sayi2;    //Sayi1, Sayi2'ye Eşit Midir ? -> False
+                  Comp = Sayi1 === Sayi2;    //Sayi1, Sayi2'ye Denk (Tür ve Değeri Aynı) Midir ? -> False
+                  Comp = Sayi1 != Sayi2;    //Sayi1, Sayi2'ye Eşit Değil Midir ? -> True
+                  Comp = Sayi1 > Sayi2;    //Sayi1, Sayi2'den Büyük Müdür ? -> False
+                  Comp = Sayi1 < Sayi2;    //Sayi1, Sayi2'den Küçük Müdür ? -> True
+                  Comp = Sayi1 >= Sayi2;    //Sayi1, Sayi2'ye Büyük Eşit Midir ? -> False
+                  Comp = Sayi1 <= Sayi2;    //Sayi1, Sayi2'ye Küçük Eşit Midir ? -> False
+
+                  //MANTIKSAL OPERATÖRLER
+                  var Deger1 = true;
+                  var Deger2 = false;
+                  var Comp;    //Karşılaştırmalarda true/false değeri alacaktır
+                  Comp = Deger1 && Deger2;    //Ve Operatörü. Her İki değerin aynı olmasında true değerini döndürür -> False
+                  Comp = Deger1 || Deger2;    //Veya Operatörü. Değerlerden herhangi birisinin true olmasında true değerini döndürür -> True
+                  Comp = !Deger1 ;    //Değili Operatörü. Değerin karşıtını döndürür -> False
+
+                  // KOŞUL OPERATÖRÜ
+                  var Deger = true;
+                  var Comp;
+                  Comp = Deger ? "Deger true" : "Deger false";
+                  //Deger değişkeni true ise Comp değişkeni Deger true, false ise Comp değişkeni Deger false değerini alır
+            </script>
+      </body>
+</html>

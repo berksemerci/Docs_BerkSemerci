@@ -239,5 +239,5 @@ Comp = Deger ? "Deger true" : "Deger false";
 
 {% file src="../.gitbook/assets/javascript\_operator.html" caption=" Javascript Operatörleri Örneğini İndir" %}
 
-## Javascript Fonksiyon Kullanımı
+## Javascript Function\(Fonksiyon\) Kullanımı
 

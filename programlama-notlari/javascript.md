@@ -20,11 +20,11 @@ description: Bir web sitesine kazandırılan işlevselliğin diğer adı.
 </html>
 ```
 
-🔵 Javascript genellikle _**&lt;head&gt;**_ veya _**&lt;body&gt;**_ tag'ları içerisinde çalıştırılır. Her ikisine de yazılmasına gerek yoktur. Sayfanın çalıştırılma prensibi ve yükleme hızı göz önüne alınarak tercihte bulunularak yazılır. Yukarıdaki örnekte basit bir Javascript yapısı bulunmaktadır. Javascript tanımlamaları sayfa içerisinde yapılacaksa mutlaka _**&lt;script&gt;**_ ile başlamalı ve _**&lt;/script&gt;**_ ile kapatılmalıdır. Script tag içerisinde bulunun _**alert\(\);**_ ise sayfa yüklendiğinde ekrana uyarı mesajı verilmesini sağlar. 
+🔵 Javascript genellikle _**&lt;head&gt;**_ veya _**&lt;body&gt;**_ tag'ları içerisinde çalıştırılır. Her ikisine de yazılmasına gerek yoktur. Sayfanın çalıştırılma prensibi ve yükleme hızı göz önüne alınarak tercihte bulunularak yazılır. Yukarıdaki örnekte basit bir Javascript yapısı bulunmaktadır. Javascript tanımlamaları sayfa içerisinde yapılacaksa mutlaka _**&lt;script&gt;**_ ile başlamalı ve _**&lt;/script&gt;**_ ile kapatılmalıdır. Script tagları içerisinde bulunun _**alert\(\);**_ ise sayfa yüklendiğinde ekrana uyarı mesajı verilmesini sağlar. \(Daha sonraki aşamalarda detaylı bir şekilde bulunmaktadır.\)
 
 ![Yukar&#x131;da basit kodlamas&#x131; verilen ve a&#xE7;&#x131;klamas&#x131; yap&#x131;lan &#xF6;rne&#x11F;in ekran g&#xF6;r&#xFC;n&#xFC;m&#xFC;.](../.gitbook/assets/screenshot_2.png)
 
-🔵 Eğer Javascript tagları içerisinde komplike ve birden fazla işlem yapılacaksa hem daha düzenli olması hem de ileride yapılabilecek değişikliklerde yada meydana gelecek hatalarda kod satırlarının anlaşılabilir olması için ayrı bir dosya haline getirilerek dış bağlantı şeklinde projeye eklenmesi daha sağlıklı olacaktır. Bunun için tıpkı bir _**.html**_ dosyası oluşturur gibi sonu _**.js**_ ile biten bir Javascript dosyası oluşturmamız ve _**&lt;script&gt;**_ tagları içerisindeki kod satırlarımızı buraya aktarmamız gereklidir. Daha sonrasında bu kodların index veya oluşturulan başka bir sayfada işlenebilir olması için bağlantısının _**"src"**_ ile yapılması gerekmektedir. Bu bağlantı aşağıda bulunan örnekteki gibi yapılmaktadır. 
+🔵 Eğer Javascript tagları içerisinde komplike ve birden fazla işlem yapılacaksa hem daha düzenli olması hem de ileride yapılabilecek değişikliklerde yada meydana gelecek hatalarda kod satırlarının anlaşılabilir olması için ayrı bir dosya haline getirilerek dış bağlantı şeklinde projeye eklenmesi daha sağlıklı olacaktır. Bunun için tıpkı bir _**.html**_ dosyası oluşturur gibi sonu _**.js**_ ile biten bir Javascript dosyası oluşturulması ve _**&lt;script&gt;**_ tagları içerisindeki kod satırlarının buraya yazılması gereklidir. Daha sonrasında bu kodların index veya oluşturulan başka bir sayfada işlenebilir olması için bağlantı yolu kısaltması olan _**"src"**_ ile dosya yolunun eklenmesi gerekmektedir. Bu bağlantı aşağıda bulunan örnekteki gibi yapılmaktadır. 
 
 ```markup
 <!DOCTYPE html>
@@ -42,7 +42,7 @@ description: Bir web sitesine kazandırılan işlevselliğin diğer adı.
 
 ## Javascirpt Output \(Çıktı\) İşlemleri
 
-🔵 Javascript işlemlerinden geri dönüş sağlamak, sayfa içerisindeki herhangi bir elemente değer atamak, sayfada bildirim gerçekleştirmek ve konsol çıktıları oluşturmak için kullanılan kod yapılarını 4 başlıkta topluyoruz. Bunlar;
+🔵 Javascript işlemlerinden geri dönüş sağlamak, sayfa içerisindeki herhangi bir elemente değer atamak, sayfada bildirim gerçekleştirmek ve konsol çıktıları oluşturmak için kullanılan kod yapılarını 4 başlıkta toplanır. Bunlar;
 
 * **alert\(\) veya window.alert\(\)**
 
@@ -123,19 +123,27 @@ Açıklama satırı eklenecek ise çift eğik çizgi "//" veya yıldız-eğik ç
 
 {% file src="../.gitbook/assets/javascript\_output.html" caption="Javascirpt Output\(Çıktı\) İşlemleri Örneğini İndir" %}
 
-## Javascript Variable \(Değişken\) Tanımlama
+## Javascript Variables \(Değişkenler\) Tanımlama
 
-🔵 Javascript içerisinde değişken tanımlamak son derece kolaydır. Bazı dillerde olduğu gibi tanımlama yapılacak olan değişkenin türünün belirtilmesine ihtiyaç yoktur. Değişken tanımlarken ingilizce anlamı olan variable'ın kısaltılmışı _**"var"**_ kullanılır. Değişkene değer ataması yapmak için _**eşittir "="**_ operatörü kullanılır.  
-  
-         **`var`** `DegiskenAdi` = `AtanacakDeger;`
+🔵 Javascript içerisinde değişken tanımlamak son derece kolaydır. Bazı dillerde olduğu gibi tanımlama yapılacak olan değişkenin türünün belirtilmesine ihtiyaç yoktur. Değişken tanımlarken genellikle kullanışlı olması sebebiyle ingilizce anlamı olan variable'ın kısaltılmışı _**"var"**_ kullanılır. Bunun haricinde _**"const"**_ ve _**"let"**_ de kullanılabilir. Değişkene değer ataması yapmak için _**eşittir "="**_ operatörü kullanılır. \(Operatörlerle ilgili detaylı bilgi yazının devamında bulunmaktadır.\)
+
+{% hint style="warning" %}
+**var** = Tanımlı olduğu her yerden erişilebilir değişken türüdür. Oluşturulan değişken farklı fonksiyonlar içerisinde farklı değerler alabilir. En son atanan değer yapılan son işlemde geçerlidir.
+
+**const =** Sabit değerli değişkenler atanmasını sağlar. Yani atanan değer kullanılacak olan tüm hesaplama ve fonksiyonlarda geçerlidir.
+
+**let =** Sadece tanımlı olduğu süslü parantez "{}" içerisinden erişilebilir. Yeni değer ataması yapılabilir. Var'a göre daha kısıtlayıcı, const'a göre daha kapsamlı kullanıma sahiptir.
+{% endhint %}
+
+             **`var`** `DegiskenAdi` = `AtanacakDeger;`
 
 {% hint style="info" %}
-Her değişken için tanımlama yapılırken değer atamasına gerek yoktur. Yani bazı değişkenler kullanılacaklar zamanlarda değer alabilir.  
+Her değişken için tanımlama yapılırken değer atamasına gerek yoktur. Bazı değişkenler kullanılacaklar zamanlarda değer alabilir. Değer ataması yapılmamış değişken _**"undefined"**_ veya _**"null"**_ değer alır.  
   
 **`var`** `DegiskenAdi;`
 {% endhint %}
 
-🔵 Değişkenler; **Sayı** _**"int"**,_ **Ondalıklı Sayı** _**"double"**,_ **Metinsel** _**"string"** ve_ **Mantıksal "**_**boolean"**_ olarak tanımlanabilir.
+🔵 Değişkenler temelde; **Sayı** _**"int"**,_ **Ondalıklı Sayı** _**"double"**,_ **Metinsel** _**"string"** ve_ **Mantıksal "**_**boolean"**_ olarak tanımlanır.
 
 ```javascript
 var sayi1 = 10;    //int
@@ -145,10 +153,10 @@ var durum = false;    //boolean
 ```
 
 {% hint style="warning" %}
-Eğer bir değişkene yapılan atamanın hangi türde yapıldığı bilinmiyor veya hatırlanmıyorsa yada değişken türü değişimlerinde kontroller yapılacaksa, _**typeof\(degisken\)**_ kod parçacığı ile tür bilgisi öğrenilebilir.
+Eğer bir değişkene yapılan atamanın hangi türde yapıldığı bilinmiyor veya hatırlanmıyorsa yada değişken türü değişimlerinde kontroller yapılacaksa, _**typeof\(degisken\)**_ kod parçacığı ile tür bilgisi öğrenilir.
 
 document.write\(_**typeof\(deger1\)**_\);  
-// Sayfa içerisindeki herhangi bir yere "deger1" adlı değişkenimizin türünü yazdırır.
+// Sayfa içerisindeki herhangi bir yere "deger1" adlı değişkenin türünü yazdırır.
 {% endhint %}
 
 ![T&#xFC;m Variable\(De&#x11F;i&#x15F;ken\) i&#x15F;lemlerinin tek bir &#xF6;rnekte g&#xF6;sterilmi&#x15F; h&#xE2;li.](../.gitbook/assets/javascript_variable_ss.png)
@@ -245,7 +253,7 @@ Comp = Deger ? "Deger true" : "Deger false";
 
 ## Javascript Function \(Fonksiyon\) Kullanımı
 
-🔵 Javascript'te Function\(Fonksiyon\) tekrar eden veya sık kullanılan işlemlerin tek bir yerden kontrol edilmesini sağlar. Oluşturulan fonksiyon işlem yapılacak kod bloğu içerisinde çağrılarak değer gönderilir ve Function\(Fonksiyon\) içerisinden de yapılan işlemlerin sonucu geri döndürülür. Örnek vermek gerekirse, bir mağazada satılan bir ürünün ücret ödemesiyle ilgili hesaplama yapılacak olsun. Bu ürüne ödenen ücretten ürün ücreti çıkarılarak geri ödenecek ücretin hesaplanması gereksin. O halde;
+🔵 Javascript'te Function\(Fonksiyon\) tekrar eden veya sık kullanılan işlemlerin tek bir yerden kontrol edilmesini sağlar. Oluşturulan fonksiyon için önce işlem yapılacak kod bloğu içerisinde çağrılarak değer gönderilir. Sonra Function\(Fonksiyon\) içerisinden de yapılan işlemlerin sonucu geri döndürülür. Örnek vermek gerekirse, bir mağazada satılan bir ürünün ücret ödemesiyle ilgili hesaplama yapılacak olsun. Bu ürüne ödenen ücretten, ürün ücreti çıkarılarak geri ödenecek ücretin hesaplanması gereksin. O halde;
 
 ```javascript
 var UrunUcreti = 250;
@@ -254,7 +262,7 @@ var GeriOdeme;
 GeriOdeme = OdenenUcret - UrunUcreti;
 ```
 
-🔹 Şeklinde tanımlamalar ve işlemleri gerçekleştirmemiz gerekecektir. Fakat bu üründen bir tane değil de yirmi adet sipariş edilmiş olursa ne olur ? Bizim bu yapmış olduğumuz kodlamayı yirmi defa yazmamız gerekir. Yirmi işlem için dört satır kod yazdığımızda aslında seksen satırlık kod oluşturmuş oluyoruz. Bu işlem yorumlayıcı için oldukça yüklü ve gereksiz bir süreç haline geliyor. Üstelik ürün fiyatından değişiklik olması durumunda bu seksen satırı tekrar gözden geçirmemiz gerekiyor olacak. Daha kötüsü değişken adında değişiklik olması durumunda işin içinden çıkılamayacak bir hal alması bile söz konusu olabilir. İşte tam da bu ve bunun gibi sebeplerden dolayı Function\(Fonksiyon\) kullanıyoruz. Function\(Fonksiyon\) kullanımını basit bir şekilde öncelikle şöyle örnekleyebiliriz;
+🔹 Şeklinde tanımlamalar ve işlemleri gerçekleştirilmesi gerekecektir. Fakat bu üründen bir tane değil de yirmi adet sipariş edilmiş olursa ne olur ? Yukarıda yazılmış olan kod satırlarının yirmi defa yazılması gerekir. Yirmi işlem için dört satır kod yazıldığında aslında seksen satırlık kod oluşturulmuş olur. Bu işlem yorumlayıcı için oldukça yüklü ve gereksiz bir süreç haline gelir. Üstelik ürün fiyatında değişiklik olması durumunda bu seksen satırı tekrar gözden geçirmek gerekir. Daha kötüsü değişken adında değişiklik olması durumunda işin içinden çıkılamayacak bir hal alması bile söz konusu olabilir. İşte tam da bu ve bunun gibi sebeplerden dolayı Function\(Fonksiyon\) kullanılır. Function\(Fonksiyon\) kullanımını basit bir şekilde öncelikle şöyle örneklenir;
 
 ```javascript
 function Mesaj(){
@@ -264,7 +272,7 @@ function Mesaj(){
 Mesaj();
 ```
 
-🔹Burada yapmış olduğumu işlemle öncelikle _**"Mesaj"**_ adında bir Function\(Fonksiyon\) oluşturduk. İçerisinde _**"document.write\(\)"**_ komutu ile bir yazı ekledik. Ve beşinci satırımızda _**"Mesaj\(\)"**_ fonksiyonu çağırarak içerisindeki komutun ekrana yazılmasını sağladık. Fakat burada sabit bir komutun ekrana yazılmasını görüyoruz. Peki yukarıdaki örnekteki gibi geri ödenecek ücret hesaplamasını nasıl bu şekilde yapabiliriz. Bunun için Function\(Fonksiyon\)'umuza parametre tanımlaması ve bu parametreye fonksiyon çağrılırken değer göndermemiz gerekli. Bu işlemi ise şöyle yapıyoruz;
+🔹Burada yapılmış oldan işlemle öncelikle _**"Mesaj"**_ adında bir Function\(Fonksiyon\) oluşturulmuştur. İçerisinde _**"document.write\(\)"**_ komutu ile bir yazı eklenmiştir. Ve beşinci satırda _**"Mesaj\(\)"**_ fonksiyonu çağırarak içerisindeki komutun ekrana yazılması sağlanmıştır. Fakat burada sabit bir komutun ekrana yazılmasını görüyoruz. Peki yukarıdaki örnekteki gibi geri ödenecek ücret hesaplaması bu şekilde nasıl yapılabilir ? Bunun için Function\(Fonksiyon\)'a parametre tanımlaması ve bu parametreye fonksiyon çağrılırken değer gönderilmesi gerekir. Bu işlemi ise şöyle yapılır;
 
 ```javascript
 function Hesaplama(OdenenUcret){
@@ -280,7 +288,7 @@ Hesaplama(GonderilenUcret);
 //Çıktısı : 75
 ```
 
-🔹_**"Hesaplama"**_ adında bir fonksiyon oluşturduk ve bu fonksiyonumuzun içerisinde tekrar edecek işlemlerimizi sabitledik. _**"UrunUcreti"**_ ve _**"GeriOdeme"**_ değişkenlerimizi tanımladık ve geri ödenecek ücretin hesaplanması için gerekli matematiksel operatörü kullanarak işlemimizi gerçekleştirdik. Sonucumuzu sayfaya yazdırdık. Peki hesaplama yapılırken fonksiyonumuz _**"OdenenUcreti"**_ nasıl aldı ? Bunun cevabı dokuzuncu satırımızda. Biz bu satırda fonksiyonumuzun _**parantez "\(\)"**_ ****işaretleri içerisinde tanımlı _**"OdenenUcret"**_ parametresine sekizinci satırda tanımlamış olduğumuz _**"GonderilenUcret"**_ değişkenimizin değerini gönderdik. Fonksiyonumuzda parametresine gelen değeri yapmasını istediğimiz işlem satırında kullanarak sonucu bizim ekranımıza yazdırdı.
+🔹_**"Hesaplama"**_ adında bir fonksiyon oluşturulmuş ve bu fonksiyon içerisinde tekrar edecek işlemler sabitlenmiştir. _**"UrunUcreti"**_ ve _**"GeriOdeme"**_ değişkenleri tanımlanarak, geri ödenecek ücretin hesaplanması için gerekli matematiksel operatörü kullanımıyla hesaplama işlemi gerçekleştirilmiştir. Hesaplama işleminde çıkan sonuç ekrana yazdırılmıştır. Peki hesaplama yapılırken fonksiyon _**"OdenenUcreti"**_ nasıl alıyor ? Bunun cevabı dokuzuncu satırdaki kodda gizlidir. Bu satırda fonksiyonun _**parantez "\(\)"**_ ****işaretleri içerisinde tanımlı _**"OdenenUcret"**_ parametresine sekizinci satırda tanımlanmış _**"GonderilenUcret"**_ değişkenin değeri gönderilmiştir. Fonksiyon, parametresine gelen değeri işlemin gerçekleştirilmesi istenilen dördüncü satırda kullanarak sonucu ekrana yazdırmıştır.
 
 {% hint style="warning" %}
 Function\(Fonksiyon\)'a gönderilecek değer _**parantez "\(\)"**_ içerisinde parametre olarak gönderilir. Parantez içerisinde birden fazla parametre gönderilebilir. Gönderilecek parametreler birden fazla ise _**virgül ","**_  işareti ile ayrılır.
@@ -301,7 +309,7 @@ Hesaplama(GonderilenUcret, AdSoyad);
 //Çıktısı : Elif USLU Kişisine 75 TL Ödeme Yapılacak !
 ```
 
-🔹Yukarıdaki örnekte hem ücret hem de ücreti ödeyen kişinin ad soyad bilgisini içeren değişkenlerin değerlerini iki ayrı parametre ile fonksiyonumuza gönderdik. Fonksiyonumuz parametrelerine gelen değerleri ilgili işlem satırında kullanarak ekrana sonucu yazdırdı. Peki fonksiyonumuzun içerisindeki değeri her zaman ekrana yazdırmak istemezsek veya sonuç değişkenimizi başka bir işlemde veya fonksiyonda kullanmak istersek ne yapmamız gerekiyor ? Bu seferde fonksiyon çağırma işleminin aslında tersini yapmamız yani değer döndürmemiz gerekiyor. Fonksiyon içerisinde değer döndürmek için ise _**"return"**_ kullanılır.
+🔹Yukarıdaki örnekte hem ücret hem de ücreti ödeyen kişinin ad soyad bilgisini içeren değişkenlerin değerlerini iki ayrı parametre ile fonksiyona gönderimi gösterilmiştir. Fonksiyon parametrelerine gelen değerleri ilgili işlem satırında kullanarak ekrana sonucu yazdırmıştır. Peki fonksiyonun içerisindeki değeri her zaman ekrana yazdırmak tercih edilmez veya sonuç değişkeni başka bir işlemde yada fonksiyonda kullanılmak istenirse ne yapılması gerekir ? Bu seferde fonksiyon çağırma işleminin aslında tersini yapılması yani değer döndürülmesi gerekir. Fonksiyon içerisinde değer döndürmek için ise _**"return"**_ kullanılır.
 
 ```javascript
 function Hesaplama(OdenenUcret, Siparisci){
@@ -318,7 +326,7 @@ document.write(Hesaplama(GonderilenUcret, AdSoyad));
 //Çıktısı : Elif USLU Kişisine 75 TL Ödeme Yapılacak !
 ```
 
-🔹_**"return"**_ ekleyerek sonuç değerimizi onuncu satırda fonksiyonumuzu çağırmak için kullandığımız satıra geri döndürdük ve ekranımıza yazdırdık. Sonuç değerimizi ekrana yazdırmak istemiyorsak _**"document.write\(\)"**_ yerine bir değişken tanımlaması yaparak sonuç değerimizi atayabiliriz.
+🔹_**"return"**_ eklenerek sonuç değeri onuncu satırda fonksiyonu çağırmak için kullanılan satıra geri döndürülür ve ekrana yazdırılır. Eğer sonuç değeri doğrudan ekrana yazdırılmak istenmezse _**"document.write\(\)"**_ yerine bir değişken tanımlaması yapılarak sonuç değerinin oluşturulan bu yeni değişkene ataması yapılır.
 
 ```javascript
  var SonucDeger = Hesaplama(GonderilenUcret, AdSoyad); 
@@ -342,15 +350,15 @@ var Araba = {
 console.log(Araba);
 ```
 
-![Yukar&#x131;da yapm&#x131;&#x15F; oldu&#x11F;umuz kod sat&#x131;rlar&#x131;n&#x131;n console ekran&#x131;nda g&#xF6;r&#xFC;n&#xFC;m&#xFC;.](../.gitbook/assets/javascript_object_consolelog1.png)
+![Yukar&#x131;da bulunan kod sat&#x131;rlar&#x131;n&#x131;n console ekran&#x131;nda g&#xF6;r&#xFC;n&#xFC;m&#xFC;.](../.gitbook/assets/javascript_object_consolelog1.png)
 
-🔹Eğer _**"Araba"**_ objesinde tanımlamış olduğumuz özelliklerden seçim yapmazsak yukarıdaki console çıktısında olduğu gibi eklemiş olduğumuz tüm özellikleri bir _**Array**_ olarak listelenmiş şekilde görürüz. Mesela biz sadece arabanın _**"Markası"**_ bilgisini console yazdırmak istiyorsak bu sefer;
+🔹Eğer _**"Araba"**_ objesinde tanımlanmış olan özelliklerden seçim yapmazsak yukarıdaki console çıktısında olduğu gibi eklenmiş olan tüm özellikler bir _**Array**_ olarak listelenmiş şekilde görülür. Sadece arabanın _**"Markası"**_ bilgisini console yazdırılması isteniyorsa;
 
 ```javascript
-console.log(Araba.Markasi);    //Araba objemizinin sadece Markasi özelliğini yazıdırır
+console.log(Araba.Markasi);    //Araba objesinin sadece Markasi özelliğini yazıdırır
 ```
 
-🔹Object\(Objeler\) içerisinde fonksiyon tanımlayarak bazı işlemler gerçekleştirebiliriz. Peki fonksiyon tanımlamasını Object\(Objeler\) içerisinde nasıl gerçekleştiriyoruz ?
+🔹Object\(Objeler\) içerisinde fonksiyon tanımlayarak bazı işlemler gerçekleştirilebilir. Fonksiyon tanımlaması Object\(Objeler\) içerisinde şu şekilde gerçekleştirilir;
 
 ```javascript
 var Araba = {
@@ -368,7 +376,7 @@ console.log(Araba.Markasi);
 Araba.Calistir();
 ```
 
-🔹_**"Calistir"**_ adından bir fonksiyon oluşturduk ve bu fonksiyonumuzu objemizin dışından çağırdık. O zaman objemizin içerisinde oluşturduğumuz başka bir fonksiyonla yine obje içerisinde bir işlem yapabilir miyiz ?
+🔹Yukarıdaki örnekte _**"Calistir"**_ adından bir fonksiyon oluşturulmuş ve bu fonksiyon objenin dışından çağrılmıştır. Aynı şekilde Objenin içerisinde oluşturulan yeni bir fonksiyonla obje içerisinde işlem yapılabilir.
 
 ```javascript
 var Araba = {
@@ -394,9 +402,9 @@ Araba.Calistir();
 Araba.Bilgiler();
 ```
 
-![Yukar&#x131;da yapm&#x131;&#x15F; oldu&#x11F;umuz kod sat&#x131;rlar&#x131;n&#x131;n console ekran&#x131;nda g&#xF6;r&#xFC;n&#xFC;m&#xFC;.](../.gitbook/assets/javascript_object_consolelog2.png)
+![Yukar&#x131;da bulunan kod sat&#x131;rlar&#x131;n&#x131;n console ekran&#x131;nda g&#xF6;r&#xFC;n&#xFC;m&#xFC;.](../.gitbook/assets/javascript_object_consolelog2.png)
 
-🔹Bilgiler adında başka bir fonksiyon oluşturduk ve bu fonksiyonumuz içerisinde _**"Araba"**_ objesine ait özellikleri console ekranına yazdırdık. Bazı özellikleri yazdırırken _**"this"**_ kullandık. _**"Araba.Markasi"**_ ile _**"this.Markasi"**_ kullanımı arasındaki temel fark _**"this"**_ kullandığınızda bu objeyi doğrudan ifade ettiğinizden sadece bu obje içerisinde bulunan bir özelliği çekebilmenizdir. Yani _**"Araba.Markasi"**_ kullanımında _**"Araba"**_ yerine başka bir obje yazabilir, dışarıdan bir objenin özelliklerini çekebilirsiniz. Ama _**"this"**_ kullanıyorsanız yalnızca _**Araba"**_ objesinin _**süslü parantez "{}"**_ içerisindeki özelliklerinden bilgi çekebilirsiniz.
+🔹Örnekte _**"Bilgiler"**_ adında başka bir fonksiyon oluşturularak, fonksiyon içerisindeki _**"Araba"**_ objesine ait özellikler console ekranına yazdırılmıştır. Bazı özellikler yazdırılırken _**"this"**_  kullanılmıştır. _**"Araba.Markasi"**_ ile _**"this.Markasi"**_ kullanımı arasındaki temel fark _**"this"**_ kullanıldığında oluşturulan objeyi doğrudan ifade ettiğinden sadece o obje içerisinde bulunan bir özelliğin değerinin alınabilmesine olanak sağlamasıdır. Yani _**"Araba.Markasi"**_ kullanımında _**"Araba"**_ yerine başka bir obje yazabilir, dışarıdan bir objenin özellikleri de çekilebilir. Ama _**"this"**_ kullanılıyorsa yalnızca _**Araba"**_ objesinin _**süslü parantez "{}"**_ içerisindeki özelliklerinden değer çekilebilir.
 
 ```javascript
 var Araba = {
@@ -419,7 +427,7 @@ Araba.Bilgiler();
 
 ![Obje ad&#x131; ve this kullan&#x131;m&#x131;n&#x131;n fark&#x131;n&#x131; anlatan yukar&#x131;daki kod sat&#x131;rlar&#x131;n&#x131;n console g&#xF6;r&#xFC;m&#xFC;.](../.gitbook/assets/javascript_object_consolelog3.png)
 
-​​ 🔹Obje içerisindeki fonksiyon işlemleri ile daha önce yapmış olduğumuz fonksiyon işlemleri arasında hiçbir fark yoktur. Orada yapmış olduğumuz tüm işlemleri burada da gerçekleştirebiliriz.
+​​ 🔹Obje içerisindeki fonksiyon işlemleri ile daha önceki örneklerde bulunan fonksiyon işlemleri arasında hiçbir fark yoktur. Orada yapılmış olan tüm işlemler burada da gerçekleştirilebilir.
 
 ```javascript
 var Araba = {
@@ -443,13 +451,179 @@ Araba.Bilgiler();
 console.log(Araba.YasHesapla());
 ```
 
-![Yukar&#x131;da yapm&#x131;&#x15F; oldu&#x11F;umuz kod sat&#x131;rlar&#x131;n&#x131;n console ekran&#x131;nda g&#xF6;r&#xFC;n&#xFC;m&#xFC;.](../.gitbook/assets/javascript_object_consolelog4.png)
+![Yukar&#x131;da bulunan kod sat&#x131;rlar&#x131;n&#x131;n console ekran&#x131;nda g&#xF6;r&#xFC;n&#xFC;m&#xFC;.](../.gitbook/assets/javascript_object_consolelog4.png)
 
-🔹Daha önce fonksiyon işlemlerinde yaptığımız gibi matematiksel operatör kullanarak _**"Araba"**_ objemiz içerisinde _**"Yili"**_ özelliğindeki değeri arabamızın yaşını hesaplamak için kullandık. Çıkan sonucu _**"return"**_ ederek console ekranına yazdırdık.
+🔹Örnekte yeni bir fonksiyon ve matematiksel operatör kullanılarak _**"Araba"**_ objesi içerisinde oluşturulan _**"Yili"**_ özelliğindeki değer alınarak arabanın yaşı hesaplanmıştır. Çıkan sonuç ise _**"return"**_ edilerek console ekranına yazdırılmıştır.
 
 {% file src="../.gitbook/assets/javascript\_object.html" caption="Javascript Object \(Objeler\) Örneğini İndir" %}
 
-## Javascript Event \(Olaylar\) Kullanımı
+## Javascript Events \(Olaylar\) Kullanımı
+
+ 🔵 Javascript ile sayfa içerinde gerçekleştirilen olaylara göre bazı reaksiyonlar alınabilir. Yani bir input içerisine yazı yazıldığında yada butonun üzerinde geldiğinde şu olsun veya bu olsun şeklinde bir takım olay bazlı reaksiyonlar gerçekleştirilebilir. Bu olaylar Mouse, Klavye, Form ve Pencere olayları olmak üzere dört gruba ayrılarak incelenir.
+
+* **Mouse Events \(Olayları\)**
+  * onclick
+  * onmouseover
+  * onmouseout
+  * onmousedown
+  * onmouseup
+  * onmousemove
+
+```javascript
+<button onclick="Fonksiyon_1()">Click me</button>
+//Butona tıklanınca Fonksiyon_1 çalıştır
+
+<input onmouseover="Fonksiyon_2()" onmouseout="Fonksiyon_3()">
+//Input üstüne mouse ile gelince Fonksiyon_2, üstünden mouse çekince Fonksiyon_2 çalıştır
+
+<p onmousedown="Fonksiyon_4()" onmouseup="Fonksiyon_5()">
+//Paragrafın üstüne basılı tuttuğunda Fonksiyon_4, basmayı bıraktığında Fonksiyon_5 çalıştır
+
+<img onmousemove="Fonksiyon_6()" src="">
+//Resim üzerinde mouse hareket ettiği sürece Fonksiyon_5 çalıştır
+```
+
+{% file src="../.gitbook/assets/javascript\_events\_mouse.html" caption="Javascript Events \(Olaylar\) Mouse Örneğini İndir" %}
+
+* **Keyboard Events \(Olayları\)**
+  * onkeydown
+  * onkeyup
+
+```javascript
+<input id="bas" onkeydown="Fonksiyon_1()">
+//Input seçiliyken klavyeden tuşa basıldığında Fonksiyon_1 çalıştır
+
+<input id="birak" onkeydown="Fonksiyon_2()">
+//Input seçiliyken tuş bırakıldığında Fonksiyon_2 çalıştır
+```
+
+{% file src="../.gitbook/assets/javascript\_events\_keyboard.html" caption="Javascript Events \(Olaylar\) Keyboard Örneğini İndir" %}
+
+* **Form Events \(Olayları\)**
+  * onsubmit
+  * onfocus
+  * onblur
+  * onchange
+
+```javascript
+<form action="" onsubmit="Fonksiyon_1()">
+//Form gönderildiğinde Fonksiyon_1 çalıştır
+
+      Bir Şeyler Yaz :<input onfocus="Fonksiyon_2()" onblur="Fonksiyon_3()"type="text">
+      //Input üzerinde çalışldığında Fonksiyon_2, başka bir işleme geçildiğinde Fonskiyon_3 çalıştır
+      
+      <select id="Secim" onchange="Fonksiyon_4()">
+      //Seçim işlemlerinde değişim olduğunda Fonskiyon_4 çalıştır
+      
+            <option value="Audi">Audi</option>
+            <option value="BMW">BMW</option>
+            <option value="Mercedes">Mercedes</option>
+            <option value="Volvo">Volvo</option>
+      </select>
+      <p>Şuan Bir Şey Seçilmedi !!!</p>
+      <input type="submit" value="Submit">
+</form>
+```
+
+{% file src="../.gitbook/assets/javascript\_events\_form.html" caption="Javascript Events \(Olaylar\) Form Örneğini İndir" %}
+
+* **Window/Document Events \(Olayları\)**
+  * onload
+  * onunload
+  * onresize
+
+```javascript
+<!DOCTYPE html>
+<html>
+  <body onload="Fonksiyon_1()" onunload="Fonksiyon_2()" onresize="Fonksiyon_3()">
+  //Sayfa yüklendiğinde Fonksiyon_1, kapatılırken Fonksiyon_2, pencere boyutu değiştiğinde Fonksiyon_3 çalıştır
+  
+    ...
+  </body>
+</html>
+```
+
+{% file src="../.gitbook/assets/javascript\_events\_window.html" caption="Javascript Events \(Olaylar\) Window Örneğini İndir" %}
+
+🔹Javascript olaylarına yazılan fonksiyonlarda objelerde de olduğu gibi işlemler yaptırılabilir. Örnek vermek gerekirse, iki adet farklı veri giriş alanına girilen metin birleştirilebilir. Yada butona tıklandığında bir obje türetilerek bu obje içerisindeki özellikler ekrana yazdırılabilir.
+
+*  İki adet farklı veri giriş alanına girilen metini birleştiren örnek uygulama aşağıdaki gibidir;
+
+```javascript
+<!DOCTYPE html>
+<html>
+      <head> 
+            <meta charset="UTF-8">
+            <title>Javascript Test</title>
+      </head> 
+      <body>
+            <input type="text" name="Metin1">
+            <input type="text" name="Metin2">
+            <button onclick="Metin_Birlestir(document.getElementsByName('Metin1')[0].value, document.getElementsByName('Metin2')[0].value)">Metinleri Birleştir</button>
+            <p id="BirlesikMetin"></p>
+
+            <script>
+                  function Metin_Birlestir(GelenMetin1, GelenMetin2) {
+                        document.getElementById("BirlesikMetin").innerHTML = GelenMetin1 + " " +GelenMetin2;
+                  }
+                  function Fonksiyon_2() {
+                        document.getElementsByTagName("input")[0].style.color = "green";
+                  }
+            </script>
+      </body>
+</html>
+```
+
+![Yukar&#x131;da kodlamas&#x131; verilen &#xF6;rnek uygulaman&#x131;n ekran &#xE7;&#x131;kt&#x131;s&#x131;.](../.gitbook/assets/javascript_events_example_1.png)
+
+{% file src="../.gitbook/assets/javascript\_events\_example\_1.html" caption="Javascript Events \(Olaylar\) Örnek Uygulama - 1 İndir" %}
+
+* Butona tıklandığında bir obje türetilerek bu obje içerisindeki özelliklerin ekrana yazdırıldığı örnek uygulama aşağıdaki gibidir;
+
+```javascript
+<!DOCTYPE html>
+<html>
+      <head> 
+            <meta charset="UTF-8">
+            <title>Javascript Test</title>
+      </head> 
+      <body>
+            <button onclick="ObjeTuret()">Bir Canlı Objesi Türet</button>
+            <p id="TuretilenObje"></p>
+
+            <script>
+                  function ObjeTuret() {
+                        var YeniObje = {
+                              Turu : "İnsan",
+                              Sac : "Kahverengi",
+                              Goz : "Mavi",
+                              Ten : "Siyahi",
+                              Yas : "45",
+                              Bilgiler: function(){
+                                    document.getElementById("TuretilenObje").innerHTML =
+                                            ("Canlı Türü : " + this.Turu) + '<br>' +
+                                            ("Saç Rengi: " + this.Sac) + '<br>' +
+                                            ("Göz Rengi: " + this.Goz) + '<br>' +
+                                            ("Ten Rengi: " + this.Ten) + '<br>' +
+                                            ("Yaşı: " + this.Yas);
+                              }
+                        }
+                        YeniObje.Bilgiler();
+                  }
+            </script>
+      </body>
+</html>
+```
+
+![Yukar&#x131;da kodlamas&#x131; verilen &#xF6;rnek uygulaman&#x131;n ekran &#xE7;&#x131;kt&#x131;s&#x131;.](../.gitbook/assets/javascript_events_example_2.png)
+
+{% file src="../.gitbook/assets/javascript\_events\_example\_2.html" caption="Javascript Events \(Olaylar\) Örnek Uygulama - 2 İndir" %}
+
+{% hint style="warning" %}
+Kod yazarken bazı yerlerde çift tırnak " bazı yerlerde ise tek tırnak ' kullanılmasının sebebi özellikle metinsel ifadelerde yada örneklerde olduğu gibi event işlemlerinde iç içe yazımlarda yazılan kodun derlenirken kesilmemesini sağlamaktır.
+{% endhint %}
+
+## Javascript Array ve Metodlarının Kullanımı
 
 
 

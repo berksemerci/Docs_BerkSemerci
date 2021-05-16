@@ -566,9 +566,6 @@ console.log(Araba.YasHesapla());
                   function Metin_Birlestir(GelenMetin1, GelenMetin2) {
                         document.getElementById("BirlesikMetin").innerHTML = GelenMetin1 + " " +GelenMetin2;
                   }
-                  function Fonksiyon_2() {
-                        document.getElementsByTagName("input")[0].style.color = "green";
-                  }
             </script>
       </body>
 </html>

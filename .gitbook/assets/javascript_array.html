@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+      <head> 
+            <meta charset="UTF-8">
+            <title>Javascript Test</title>
+      </head> 
+      <body>
+            <script>
+                  var Sayilar = ["Bir", "İki", "Üç", "Dört", "Beş"];    //Sayilar adında dizi değişkeni
+
+                  console.log(Sayilar);   //Sayilar içerisindeki elemanların console ekranına yazıdırılması
+
+                  console.log(Sayilar[3]);      //Sayılar içerisindeki indis değeri 3 olan elemanın console ekranına yazıdırlması
+
+                  var ElemanSayisi = Sayilar.length;      //Eleman sayısının bulunması
+                  console.log("Dizideki Eleman Sayısı : " + ElemanSayisi);      //Bulunan eleman sayısının console ekranına yazıdırlması
+
+                  Sayilar[2] = "On";      //Indis değeri 2 olan elemana yeni değer atamasının yapılması
+
+                  Sayilar.push("SonaEkle");    //Dizinin sonuna eleman ekleme
+                  Sayilar.unshift("BaşınaEkle");    //Dizinin başına eleman ekleme
+                  Sayilar.splice(2,0,"OrtayaEkle")    //Dizinin ortasına eleman ekleme, ikinci değer 0 olursa eleman silinmez !
+
+                  Sayilar.shift();    //Dizinin başından eleman silme
+                  Sayilar.pop();    //Dizinin sonundan eleman silme
+                  Sayilar.splice(2,1);    //Dizinin indis bilgisi 2 olan elemanından itibaren bir eleman silme
+                  delete Sayilar[1];    //Dizi de bulunan indis bilgisi 1 olan elemanın değerini silme
+
+                  Sayilar.splice(0, 3, "Yedi", "Sekiz", "Dokuz");    //Dizi içerisinde eş zamanlı olarak eleman ekleme ve silme işlemi
+
+                  console.log(Sayilar);    //Dizinin console ekranına yazdırılması
+
+                  var Dizi_1 = ["Araba", "Uçak", "Tren", "Gemi"];    //Birinci dizi ve elemanları
+                  var Dizi_2 = ["Kırmız", "Mavi", "Yeşil"];    //İkinci dizi ve elemanları
+
+                  var Birlesik_Dizi = Dizi_1.concat(Dizi_2);    //Dizi birleştirme işlemi - Birinci dizinin içerisine ikinci dizinin elemanlarını ekler
+
+                  var Bolunmus_Dizi = Birlesik_Dizi.slice(0,2);    //Dizi parçalama işlemi - Dizinin içerisinden belirtilen indisten itibaren istenilen sayı kadar elemanı başka bir diziye ekle
+
+                  console.log(Birlesik_Dizi);    //Birleştirilmiş dizinin console ekranına yazdırılması
+                  console.log(Bolunmus_Dizi);    //Parçalanmış dizinin console ekranına yazdırılması
+
+                  var Siralama = ["A", "K", "F", "T", "B"];    //Dizi ve elemanları
+                  console.log(Siralama.sort());    //Elemanların alfabetik veya küçükten büyüğe sıralanması
+                  console.log(Siralama.reverse());    //Elemanların tersten sıralanması
+
+                  console.log(Sayilar);    //Dizinin genel görünümünün console ekranına yazıdırılması
+                  console.log("Aranan İndis : " + Sayilar.indexOf("Üç"));    //Aranılan elemanın indis bilgisinin bulunması
+
+                  var Sayilar = ["Bir", "İki", 3, 4, 5];    //Sayilar adında dizi değişkeni
+
+                  var Sayilar = Sayilar.toString();    //Dizi içerisindeki elemanların veri türünün metinsel olarak değiştirilmesi
+                  console.log(typeof(Sayilar[2]));    //İndis değeri 2 olan elemanın veri türünün console ekranına yazdırılması
+
+                  console.log(Sayilar.join("_"));    //Listeleme sırasında virgül yerine alttire işaretinin kullanılması
+            </script>
+      </body>
+</html>

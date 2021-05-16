@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+      <head> 
+            <meta charset="UTF-8">
+            <title>Javascript Test</title>
+      </head> 
+      <body>
+            <form action="" onsubmit="Fonksiyon_1()">
+                  Bir Şeyler Yaz :<input onfocus="Fonksiyon_2()" onblur="Fonksiyon_3()"type="text">
+                  <select id="Secim" onchange="Fonksiyon_4()">
+                        <option value="Audi">Audi</option>
+                        <option value="BMW">BMW</option>
+                        <option value="Mercedes">Mercedes</option>
+                        <option value="Volvo">Volvo</option>
+                  </select>
+                  <p>Şuan Bir Şey Seçilmedi !!!</p>
+                  <input type="submit" value="Submit">
+            </form>
+
+            <script>
+                  function Fonksiyon_1() {
+                        alert("Form Gönderildi !!!");
+                  }
+                  function Fonksiyon_2() {
+                        document.getElementsByTagName("input")[0].style.color = "green";
+                  }
+                  function Fonksiyon_3() {
+                        document.getElementsByTagName("input")[0].style.color = "red";
+                  }
+                  function Fonksiyon_4() {
+                        document.getElementsByTagName("p")[0].innerHTML = "Senin Seçimin : " + document.getElementById("Secim").value;
+                  }
+            </script>
+      </body>
+</html>

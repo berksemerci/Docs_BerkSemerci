@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+      <head> 
+            <meta charset="UTF-8">
+            <title>Javascript Test</title>
+      </head> 
+      <body>
+            <input type="text" name="Metin1">
+            <input type="text" name="Metin2">
+            <button onclick="Metin_Birlestir(document.getElementsByName('Metin1')[0].value, document.getElementsByName('Metin2')[0].value)">Metinleri Birleştir</button>
+            <p id="BirlesikMetin"></p>
+
+            <script>
+                  function Metin_Birlestir(GelenMetin1, GelenMetin2) {
+                        document.getElementById("BirlesikMetin").innerHTML = GelenMetin1 + " " +GelenMetin2;
+                  }
+                  function Fonksiyon_2() {
+                        document.getElementsByTagName("input")[0].style.color = "green";
+                  }
+            </script>
+      </body>
+</html>

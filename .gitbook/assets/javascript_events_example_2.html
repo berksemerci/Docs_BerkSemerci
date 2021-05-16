@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+      <head> 
+            <meta charset="UTF-8">
+            <title>Javascript Test</title>
+      </head> 
+      <body>
+            <button onclick="ObjeTuret()">Bir Canlı Objesi Türet</button>
+            <p id="TuretilenObje"></p>
+
+            <script>
+                  function ObjeTuret() {
+                        var YeniObje = {
+                              Turu : "İnsan",
+                              Sac : "Kahverengi",
+                              Goz : "Mavi",
+                              Ten : "Siyahi",
+                              Yas : "45",
+                              Bilgiler: function(){
+                                    document.getElementById("TuretilenObje").innerHTML =
+                                            ("Canlı Türü : " + this.Turu) + '<br>' +
+                                            ("Saç Rengi: " + this.Sac) + '<br>' +
+                                            ("Göz Rengi: " + this.Goz) + '<br>' +
+                                            ("Ten Rengi: " + this.Ten) + '<br>' +
+                                            ("Yaşı: " + this.Yas);
+                              }
+                        }
+                        YeniObje.Bilgiler();
+                  }
+            </script>
+      </body>
+</html>
